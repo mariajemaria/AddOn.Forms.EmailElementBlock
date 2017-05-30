@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>AddOn.Forms.EmailElementBlock</id>
+    <version>$version$</version>
+    <title>AddOn.Forms.EmailElementBlock</title>
+    <authors>marija.jemuovic</authors>
+    <owners>marija.jemuovic</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>E-mail element block for Episerver Forms</description>
+    <copyright>Copyright © 2017</copyright>
+    <tags>EPiServerModulePackage</tags>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\AddOn.Forms.EmailElementBlock.dll" target="lib\net45\" />
+    <file src="bin\$configuration$\AddOn.Forms.EmailElementBlock.zip" target="content\modules\_protected\AddOn.Forms.EmailElementBlock\" />
+  </files>
+</package>
