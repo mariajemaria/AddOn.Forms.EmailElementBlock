@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="English" id="en">
+    <contenttypes>
+      <emailelementblock>
+        <name>E-mail</name>
+        <description></description>
+      </emailelementblock>
+    </contenttypes>
+  </language>
+</languages>

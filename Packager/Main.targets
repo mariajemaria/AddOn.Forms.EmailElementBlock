@@ -63,7 +63,14 @@
     <!-- Create the Versioned out dir for the client resources-->
     <MakeDir Directories="$(TmpOutDir)\content\$(Version)" />
 
-    <Copy SourceFiles="$(SolutionDir)\module.config" DestinationFolder="$(TmpOutDir)\content" />
+    <ItemGroup>
+      <ModuleConfig Include="$(SolutionDir)\module.config"></ModuleConfig>
+      <ClientResources Include="$(SolutionDir)\ClientResources\**\*" />
+      <Views Include="$(SolutionDir)\Views\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ModuleConfig)" DestinationFolder="$(TmpOutDir)\content" />
+    <Copy SourceFiles="@(ClientResources)" DestinationFiles="@(ClientResources -> '$(TmpOutDir)\content\$(Version)\ClientResources\%(RecursiveDir)%(Filename)%(Extension)')"/>
+    <Copy SourceFiles="@(Views)" DestinationFiles="@(Views -> '$(TmpOutDir)\content\Views\%(RecursiveDir)%(Filename)%(Extension)')"/>
 
     <!-- Update the module config with the version information -->
     <XmlPoke XmlInputPath="$(TmpOutDir)\content\module.config" Query="/module/@clientResourceRelativePath" Value="$(Version)" />
