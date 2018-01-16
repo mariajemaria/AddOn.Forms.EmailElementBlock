@@ -24,5 +24,7 @@
           target="content\modules\_protected\AddOn.Forms.EmailElementBlock\" />
     <file src="Views\web.config"
           target="content\modules\_protected\AddOn.Forms.EmailElementBlock\Views\web.config" />
+	<file src="web.config.install.xdt" target="content" />
+    <file src="web.config.uninstall.xdt" target="content" />
   </files>
 </package>
