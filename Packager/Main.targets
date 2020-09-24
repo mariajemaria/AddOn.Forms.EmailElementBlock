@@ -55,7 +55,7 @@
     <PropertyGroup>
       <Version></Version>
     </PropertyGroup>
-    
+
     <GetVersion AssemblyPath="$(SolutionDir)\bin\$(Configuration)\AddOn.Forms.EmailElementBlock.dll">
       <Output TaskParameter="Version" PropertyName="Version" />
     </GetVersion>
@@ -97,7 +97,7 @@
     <ItemGroup>
       <_CopyItems Include="$(OutDir)\*.nupkg" />
     </ItemGroup>
-    <Copy  SourceFiles="@(_CopyItems)" DestinationFolder="D:\localnugets" />    
+    <Copy  SourceFiles="@(_CopyItems)" DestinationFolder="C:\Projects\localnugets" />
 
   </Target>
 

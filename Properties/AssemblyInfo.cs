@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("marija.jemuovic")]
 [assembly: AssemblyProduct("AddOn.Forms.EmailElementBlock")]
-[assembly: AssemblyCopyright("Copyright © 2018")]
+[assembly: AssemblyCopyright("Copyright © 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -21,5 +21,5 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("e1fde95f-587b-449e-b003-0e1b419bc67a")]
 
-[assembly: AssemblyVersion("1.1.1")]
-[assembly: AssemblyFileVersion("1.1.1")]
+[assembly: AssemblyVersion("1.1.1.1")]
+[assembly: AssemblyFileVersion("1.1.1.1")]
